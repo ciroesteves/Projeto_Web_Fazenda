@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>St. Sofia</title>
+        <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
+        <link rel="icon" href="Imagens/icon_stsofia.jpeg" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Sansita+Swashed&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="Scripts/jscript.js"></script>
+    </head>
+    <body>
+        <!--Navegador-->
+        <nav>
+            <ul>
+                <li><a href="#top">Início</a></li>
+                <li><a href="#gal">Galeria</a></li>
+                <li><a href="#neg">Negócios</a></li>
+                <li><a href="#con">Contato</a></li>
+            </ul>
+        </nav>
+        <!--Início-->
+        <div id="top">
+            <h1>Fazenda Santa Sofia</h1>
+            <hr />
+            <div>
+            <p>A Fazenda Santa Sofia é uma antiga propriedade localizada no município de Valença, no Rio de Janeiro. Com uma sede que relembra a arquitetura das antigas fazendas cafeeiras da região, grandes arvoredos, nascentes e cachoeiras.</p>
+            <p>Atualmente a fazenda trabalha diversas áreas de negócio, como pecúaria de corte, leiteira e consultoria rural.</p>
+            </div>
+            <div id="aluno">
+                By Ciro Esteves Vieira
+                GU3011321
+            </div>
+        </div>
+        <!--Galeria-->
+        <div id="gal">
+            <h2>Galeria</h2>
+            <div id="galeria">
+                <img class="img_vid" src="Imagens/galeria1img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria2img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria3img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria4img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria5img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria6img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <img class="img_vid" src="Imagens/galeria7img.jpeg" alt="Imagem sítio" title="Imagem sítio">
+                <video class="img_vid" controls muted src="Imagens/galeria8vid.mp4" alt="video sítio" title="video sítio"></video>
+                <video class="img_vid" controls muted src="Imagens/galeria9vid.mp4" alt="video sítio" title="video sítio"></video>
+            </div>
+        </div>
+        <!--Negócio-->
+        <div id="neg">
+            <h2>Negócios</h2>
+            <select id="tema" onchange="funTrocaNegocio(this.value)">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="corte">Gado de Corte</option>
+                <option value="leite">Gado de Leite</option>
+                <option value="consultoria">Consultoria</option>
+            </select>
+            <div>
+                <img id="img_negocio" class="img_vid"/>
+                <p id="texto_negocio"></p>
+            </div>
+        </div>
+        <!--Contato-->
+        <div id="con">
+            <h2>Contato</h2>
+            <form method="GET">
+                <label>Nome</label><input type="text" id="nome" name="nome" maxlength="30" required placeholder="Nome Completo">
+                <label>E-mail</label><input type="email" id="email" name="email" maxlength="38" required placeholder="E-mail" />
+                <label>Telefone/Whatsapp</label><input type="text" id="fone" name="fone" maxlength="17" required placeholder="Telefone/Whatsapp" />
+                <input type="submit" class="botao" value="Enviar">
+                <input type=reset class="botao" value="Limpar">
+            </form>
+        </div>
+    </body>
+</html>
